@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My music{% endblock %}</title>
+    {% load static %}
+    <link rel="shortcut icon" type="image/jpg" href="{%  static 'logo.jpg' %}"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    
+
+    <link rel="stylesheet" type="text/css" href="{% static 'music/css/style.css' %}"/>
+    <script type="text/javascript" src="{% static 'music/js/base.js' %}"></script>
+  
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style = "border-radius:5px;">
+          <a class="navbar-brand" href="{% url 'music:index' %}"><i class='fab fa-apple' style='font-size:34px;'></i></a>
+          
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="{% block songs_active %}{% endblock %}">
+                <a class="nav-link" href="{% url 'music:songs' 'all' %}"> <span class="glyphicon glyphicon-cd" aria-hidden="true"></span>&nbsp; Songs</a>
+              </li>
+              <li class="{% block albums_active %}{% endblock %}">
+                <a class='nav-link' href="{% url 'music:index' %}">Album</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">playlist</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                  <a class="dropdown-item" href="#">Favorite</a>
+                  <a class="dropdown-item" href="#">Action 2</a>
+
+                </div>
+              </li> -->
+            </ul>
+            <form class="form-inline my-2 my-lg-0" style="margin-right:30%;" method='get' action="{% url 'music:index'%}">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search songs" style="border-radius:20px;" name='q' value="{{ request.GET.q }}" >
+              <button class="btn btn-outline-primary my-2 my-sm-0" type="submit" style="color:white;border-radius:20px;border:outline">Search</button>
+            </form>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class ='btn btn-outline-primary my-2 my-sm-0' href="{% url 'music:create_album' %}">
+                      <i class="fa fa-plus" aria-hidden="true">Album</i> 
+                    </a>
+                </li>
+                <li>
+                    <a class = 'btn btn-outline-primary my-2 my-sm-0' href="{% url 'music:logout_user' %}">
+                      <i class="fa fa-sign-out" aria-hidden="true" style="padding: 5px; color: white;">Logout</i>
+                    </a>
+                </li>
+            </ul>
+
+</div>
+</nav>
+        
+
+{% block body %}
+
+{% endblock %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
+
+
+    
+</body>
+</html>
+

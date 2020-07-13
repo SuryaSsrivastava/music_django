@@ -1,0 +1,50 @@
+/* .songs-container{
+    margin-top: 20px;
+} */
+
+.col-sm-12{
+    margin-top: 45px;
+}
+
+#option1{
+    background-color: #201f1f;
+    border-color: #221c1d;
+    border-radius: 20px;
+    transition: .3s;
+    color: white;
+    margin-right: 10px;
+    padding:5px;
+}
+#option2{
+    background-color: #201f1f;
+    border-color: #221c1d;
+    border-radius: 20px;
+    transition: .3s;
+    color: white;
+    margin-right: 10px;
+    padding:5px;
+}
+
+.table{
+    margin:0px;
+    width: 100%;
+}
+
+.btn{
+  
+      
+    background-color: #201f1f;
+    border-color: #221c1d;
+    border-radius: 20px;
+    transition: .3s;
+    color: white;
+  }
+  
+  .nav nav-pills{
+      margin-top: 20px;
+  }
+  
+.active{
+      color: red;
+  }
+

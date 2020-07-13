@@ -1,0 +1,50 @@
+body {
+    
+    background: linear-gradient(to left bottom, #07080b, #373a3c, #686e6e, #a0a7a4, #e0e3dc);
+    
+    background: -moz-linear-gradient(right, #1f201f, #1f201f);
+    background: -o-linear-gradient(right, #1f201f, #1f201f);
+    background: -moz-linear-gradient(to left bottom, #07080b, #373a3c, #686e6e, #a0a7a4, #e0e3dc);
+    background: -o-linear-gradient(to left bottom, #07080b, #373a3c, #686e6e, #a0a7a4, #e0e3dc);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* height: 100vh;  */
+  }
+
+html {
+    height: 100vh;
+}
+
+ul.errorlist {
+    padding-left: 0;
+}
+
+ul.errorlist > li {
+    list-style: none;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+.navbar-brand {
+    font-family: 'Satisfy', cursive;
+}
+
+.fas fa-heart {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.fas fa-heart.active {
+    color: red;
+}
+
+.btn{
+    background-color: #201f1f;
+    border-color: #221c1d;
+    border-radius: 20px;
+    color: #fff;
+    
+  }

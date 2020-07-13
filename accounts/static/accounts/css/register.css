@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+ 
+
+  .container {
+    padding: 8% 0 0;
+  }
+
+  .navbar-brand {
+    font-family: 'Satisfy', cursive;
+}
+h2{
+  padding-top: 1.5rem;
+}
+a{
+  color: #333;
+}
+a:hover{
+  color: #da5767;
+  text-decoration: none;
+}
+.card{
+  border: 0.40rem solid #f8f9fa;
+  top: 10%;
+  border-radius: 20px;
+}
+
+.form-group{
+  /* text-align: center; */
+  font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    /* width: 100%;
+    border: 0;
+    box-sizing: border-box; */
+    
+}
+.form-group:hover{
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#id_username{
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 96%;
+  border: 0;
+  margin: 10px;
+  }
+
+#id_email{
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 96%;
+  border: 0;
+  margin: 10px;
+}
+#id_password{
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 96%;
+  border: 0;
+  margin: 10px;
+}
+#id_confirm_password{
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 96%;
+  border: 0;
+  margin: 10px;
+
+}
+::-webkit-input-placeholder {
+  color: rgba(66, 65, 65, 0.5);
+  text-indent: 10px;
+  margin: 10px;
+
+}
+
+
+.btn-primary {
+
+    
+    background-color: #201f1f;
+    border-color: #221c1d;
+    border-radius: 20px;
+    transition: .3s;
+   
+}
+
+.login{
+    padding: 6px 45px;
+    text-align: center;
+    color:#fff;
+    
+
+}
+
+body{
+    background: linear-gradient(to left bottom, #07080b, #373a3c, #686e6e, #a0a7a4, #e0e3dc);
+    height:100vh;
+}

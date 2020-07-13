@@ -1,0 +1,15 @@
+body {
+    /* background: #1f201f; fallback for old browsers */
+    background: linear-gradient(to left bottom, #07080b, #373a3c, #686e6e, #a0a7a4, #e0e3dc);
+    /* background: -webkit-linear-gradient(right, #1f201f, #1f201f); */
+    background: -moz-linear-gradient(right, #1f201f, #1f201f);
+    background: -o-linear-gradient(right, #1f201f, #1f201f);
+    /* background: linear-gradient(to left, #1f201f, #1f201f); */
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100vh;      
+  }
+  .navbar-brand {
+    font-family: 'Satisfy', cursive;
+}

@@ -1,0 +1,121 @@
+body {
+    
+  background: linear-gradient(to left bottom, #07080b, #373a3c, #686e6e, #a0a7a4, #e0e3dc);
+  
+  background: -moz-linear-gradient(right, #1f201f, #1f201f);
+  background: -o-linear-gradient(right, #1f201f, #1f201f);
+  
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* height: 100vh;  */
+}
+
+html {
+  height: 100vh;
+}
+
+ul.errorlist {
+  padding-left: 0;
+}
+
+ul.errorlist > li {
+  list-style: none;
+}
+
+.navbar {
+  border-radius: 0;
+}
+
+.navbar-brand {
+  font-family: 'Satisfy', cursive;
+}
+h3{
+    margin-left: 20px;
+}
+
+.form-group{
+    /* text-align: center; */
+    font-family: "Roboto", sans-serif;
+      outline: 0;
+      background: #f2f2f2; 
+       width: 100%;
+      border: 0;
+      box-sizing: border-box;
+      
+  }
+  .panel-body{
+    margin-top: 22%;
+    margin-left: 50%;
+    width: 500px;
+  }
+  
+  .form-group:hover{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  #id_artist{
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 96%;
+    border: 0;
+    margin: 10px;
+    }
+  
+  #id_album_title{
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 96%;
+    border: 0;
+    margin: 10px;
+  }
+  #id_genre{
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 96%;
+    border: 0;
+    margin: 10px;
+  }
+  #id_album_logo{
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 96%;
+    border: 0;
+    margin: 10px;
+  
+  }
+  ::-webkit-input-placeholder {
+    color: rgba(66, 65, 65, 0.5);
+    text-indent: 10px;
+    margin: 10px;
+  
+  }
+  
+  
+  .btn{
+  
+      
+    background-color: #201f1f;
+    border-color: #221c1d;
+    border-radius: 20px;
+    transition: .3s;
+    /* margin-left: 15%; */
+    color: white;
+  }
+  .col-sm-10{
+    position: center;
+  }
+  .submit{
+      margin-left: 45%;
+  }
+  #file-upload-button{
+    background-color: #201f1f;
+    border-color: #221c1d;
+    border-radius: 20px;
+    transition: .3s;
+    /* margin-left: 15%; */
+    color: white;
+  }
